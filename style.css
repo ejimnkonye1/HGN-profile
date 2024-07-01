@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ 
+  }
+  
+  body {
+    font-family: manrope;
+    line-height: 1.6;
+    color: #333;
+    background-color: transparent;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 1em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+    font-weight: 900;
+  }
+  
+ 
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    
+  }
+  
+  #goals {
+    background-color: #f7f7f7;
+    padding: 3em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  #goals:hover{
+    background-color: #337ab7;
+    color: white;
+    transition: all 0.4s;
+  }
+ 
+#slackInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+     background-color: #f7f7f7;
+    padding: 3em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* text-align: left; */
+      font-family: clashG;
+    
+}
+#slackInfo:hover{
+    background-color: #337ab7;
+    color: white;
+    transition: all 0.4s;
+
+  }
+#slackDetails {
+    flex: 1;
+   
+     
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+  #slackInfo p[data-testid="slackDisplayName"] {
+    font-weight: bold;
+    font-size: 18px;font-family: clashG;
+  font-size: 1.3rem;
+  font-style: normal;
+  }
+  
+  #slackInfo p[data-testid="currentTimeUTC"] {
+    font-size: 16px;
+    /* color: #666; */
+    font-family: clashG;
+  font-size: 1.3rem;
+  font-style: normal;
+  }
+  
+  #slackInfo p[data-testid="currentDay"] {
+    font-size: 16px;
+    /* color: #666; */
+    font-family: clashG;
+  font-size: 1.3rem;
+  font-style: normal;
+  }
+  
+  #slackInfo p[data-testid="slackEmail"] {
+    font-size: 16px;
+    /* color: #666; */
+    font-family: clashG;
+  font-size: 1.1rem;
+  font-style: normal;
+  text-wrap: nowrap;
+  text-overflow: none;
+  }
+ #link{
+      background-color: #f7f7f7;
+    padding: 3em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+ }
+  #link ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #link li {
+    margin-right: 2em;
+  }
+  #link:hover{
+    background-color: #7a8085;
+    color: white;
+    transition: all 0.4s;
+
+  }
+  /* Responsive styles */
