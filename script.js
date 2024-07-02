@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateUTCTime() {
-        const currentUTCTimeInMilliseconds = Date.now();
-        document.querySelector('[data-testid="currentTimeUTC"]').textContent = ` ${currentUTCTimeInMilliseconds} `;
+        const now = new Date();
+        const hours = now.getUTCHours().toString().padStart(2, '0');
+        const minutes = now.getUTCMinutes().toString().padStart(2, '0');
+        const seconds = now.getUTCSeconds().toString().padStart(2, '0');
+        document.querySelector('[data-testid="currentTimeUTC"]').textContent = `${hours}:${minutes}:${seconds} UTC`;
     }
-    
-    // Update the UTC time initially
+
+    document.querySelector('[data-testid="currentDay"]').textContent = getCurrentDay();
+
     updateUTCTime();
-
-    // Update the UTC time every second (1000 milliseconds)
     setInterval(updateUTCTime, 1000);
-
-    document.querySelector('[data-testid="currentDay"]').textContent = ` ${getCurrentDay()}`;
 });
